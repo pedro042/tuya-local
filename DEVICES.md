@@ -515,6 +515,7 @@
 - Cecotec TotalPure purifier
 - Cleverio AP100 air purifier
 - ComfortZone AP100 air purifier
+- Concept CA2000 air purifier
 - Dayette AP409 air purifier
 - Djive Flowmate ARC Casual purifiying fan
 - Duux Bright air purifier

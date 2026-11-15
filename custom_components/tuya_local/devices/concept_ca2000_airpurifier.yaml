@@ -1,0 +1,78 @@
+name: Concept CA2000 air purifier
+products:
+  - id: "0rkwmovsbmndtzbr"
+    manufacturer: Concept
+    model: CA2000
+
+entities:
+  - entity: fan
+    name: Air purifier
+    dps:
+      - id: 1
+        type: boolean
+        name: switch
+
+  - entity: select
+    name: Fan speed
+    dps:
+      - id: 8
+        type: string
+        name: option
+        mapping:
+          - dps_val: "1"
+            value: "1 (500 RPM)"
+          - dps_val: "2"
+            value: "2 (700 RPM)"
+          - dps_val: "3"
+            value: "3 (900 RPM)"
+
+  - entity: switch
+    name: Auto fan
+    dps:
+      - id: 102
+        type: boolean
+        name: switch
+
+  - entity: switch
+    name: Night mode
+    dps:
+      - id: 103
+        type: boolean
+        name: switch
+
+  - entity: switch
+    name: Ionizer
+    dps:
+      - id: 6
+        type: boolean
+        name: switch
+
+  - entity: switch
+    name: UV lamp
+    dps:
+      - id: 101
+        type: boolean
+        name: switch
+
+  - entity: switch
+    name: Child lock
+    dps:
+      - id: 5
+        type: boolean
+        name: switch
+
+  - entity: sensor
+    name: Air quality
+    class: aqi
+    dps:
+      - id: 105
+        type: integer
+        name: sensor
+
+  - entity: sensor
+    name: Filter operating hours
+    dps:
+      - id: 104
+        type: integer
+        name: sensor
+        unit: h
